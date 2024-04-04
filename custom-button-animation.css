@@ -1,0 +1,97 @@
+/*button annimation*/
+
+.buttons-container h2 {
+    font-family: "Nunito sans";
+    margin-bottom: 0;
+}
+.btn {
+    display: block;
+    background: #49ad9e;
+    text-decoration: none;
+    width: 100%;
+    height: 42px;
+    border-radius: 3px;
+    overflow: hidden;
+
+    box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+.btn.test-completed::after,
+.btn.test-completed::before {
+    content: "WALMART";
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-family: "Nunito sans";
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.5;
+
+    transition: all 400ms;
+    top: 0;
+}
+
+.btn.btn.test-completed:hover::after {
+    top: -36px;
+}
+
+.btn.test-completed::before {
+    content: "LEARN MORE >";
+    top: 36px;
+}
+
+.btn.btn.test-completed:hover::before {
+    top: 0;
+}
+
+/*loop background image*/
+
+.scrolling-image-container {
+  overflow: hidden;
+}
+.scrolling-image {
+  background: url("https://growthscalers.com/wp-content/uploads/2022/07/website-banner-customer-logo.jpg") repeat-x;
+  height: 750px;
+  width: 3840px;
+}
+
+.scrolling-image {
+  background: url("https://growthscalers.com/wp-content/uploads/2022/07/website-banner-customer-logo.jpg") repeat-x;
+  height: 75px;
+  width: 3840px;
+  animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-1920px); /* The image width */
+  }
+}
+
+/*Google Ads Animation*/
+#yourad{
+   overflow: visible;
+   animation: youradkf ease 1s;
+}
+
+@keyframes youradkf{
+  0% {
+    transform: translateX(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateX(-250px); 
+    transform: translateX(0px);
+   }
+  100% {
+    transform: translateX(-250px); 
+    transform: translateX(-45px);
+   }
+}
+
